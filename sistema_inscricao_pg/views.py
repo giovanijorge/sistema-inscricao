@@ -4,7 +4,7 @@ from .models import Inscricao
 
 main = Blueprint('main', __name__)
 
-@main.route('/', methods=['GET', 'POST'])
+@main.route('/inscrever', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         nome = request.form['nome']
