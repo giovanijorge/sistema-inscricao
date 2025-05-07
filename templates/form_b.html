@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscreva-se para a Palestra</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+    }
+
+    .card {
+      max-width: 700px;
+      margin: auto;
+      border-radius: 12px;
+      border: 2px solid #d0e2ff;
+      padding: 2rem;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    .row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .row .col {
+      flex: 1;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 0.2rem;
+    }
+
+    button {
+      margin-top: 2rem;
+      width: 100%;
+      background-color: #0077cc;
+      color: #fff;
+      padding: 0.9rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Participe da Palestra!</h2>
+    <form method="post">
+      <div class="row">
+        <div class="col">
+          <label for="nome">Nome Completo</label>
+          <input type="text" name="nome" id="nome" required>
+        </div>
+        <div class="col">
+          <label for="telefone">Telefone</label>
+          <input type="text" name="telefone" id="telefone" required>
+        </div>
+      </div>
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required>
+
+      <button type="submit">Quero me inscrever</button>
+    </form>
+  </div>
+</body>
+</html>

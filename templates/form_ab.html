@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição para a Palestra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      border: 1px solid #e0e0e0;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: #0059b3;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1.5rem;
+      background-color: #ff6f00;
+      color: white;
+      padding: 0.8rem;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e65c00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário de Inscrição</h1>
+    <form method="post">
+      <label for="nome">Nome Completo</label>
+      <input type="text" name="nome" id="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="telefone">Telefone de Contato</label>
+      <input type="text" name="telefone" id="telefone" required>
+
+      <button type="submit">Enviar Inscrição</button>
+    </form>
+  </div>
+</body>
+</html>
