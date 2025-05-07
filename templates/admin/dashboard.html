@@ -1,1 +1,16 @@
+<!-- templates/admin/dashboard.html -->
+<h1>Painel Administrativo</h1>
+<h2>Palestras</h2>
+<ul>
+  {% for palestra in palestras %}
+    <li>{{ palestra.titulo }} - {{ palestra.data }}</li>
+  {% endfor %}
+</ul>
+
+<h2>Inscritos</h2>
+<ul>
+  {% for inscrito in inscricoes %}
+    <li>{{ inscrito.nome }} - {{ inscrito.email }}</li>
+  {% endfor %}
+</ul>
 
