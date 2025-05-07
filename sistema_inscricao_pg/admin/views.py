@@ -4,6 +4,10 @@ from sistema_inscricao_pg import db
 
 admin_bp = Blueprint('admin', __name__, url_prefix='/admin')
 
+@admin_bp.route('/')
+def painel_admin():
+    return "Painel administrativo funcionando"
+
 @admin_bp.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
