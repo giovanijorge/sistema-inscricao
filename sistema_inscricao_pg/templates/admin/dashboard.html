@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard do Admin</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+        th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+        th { background: #007bff; color: white; }
+        a.logout { float: right; text-decoration: none; background: #dc3545; color: white; padding: 8px 12px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Dashboard do Administrador</h1>
+    <a class="logout" href="{{ url_for('admin.logout') }}">Sair</a>
+
+    <h2>Lista de Palestras</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Data</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for palestra in palestras %}
+            <tr>
+                <td>{{ palestra.id }}</td>
+                <td>{{ palestra.titulo }}</td>
+                <td>{{ palestra.data }}</td>
+                <td>{{ palestra.hora }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
